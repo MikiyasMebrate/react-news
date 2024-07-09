@@ -12,6 +12,7 @@ import Contact from './Pages/Contact/Contact.jsx'
 //Assets
 import './assets/css/mite-assets.min.css'
 import './assets/css/style.css'
+import BlogDetail from './Pages/BlogDetail/BlogDetail.jsx'
 
 
 
@@ -36,6 +37,10 @@ let router = createBrowserRouter([
         path : '/contact',
         element : <Contact />,
       },
+      {
+        path : '/blog/:blogId',
+        element : <BlogDetail />,
+      }
     ]
   }
 ])
