@@ -8,11 +8,13 @@ import Home from './Pages/Index/Home.jsx'
 import News from './Pages/News/News.jsx'
 import About from './Pages/About/About.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
+import BlogDetail from './Pages/BlogDetail/BlogDetail.jsx'
 
 //Assets
 import './assets/css/mite-assets.min.css'
 import './assets/css/style.css'
-import BlogDetail from './Pages/BlogDetail/BlogDetail.jsx'
+
+
 
 
 

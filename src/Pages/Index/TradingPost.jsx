@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 let TradingPost = ({ data }) => {
   let lastOne = data.latest_post.slice(0,2).map((top)=>{
     return(
-        <div className="news-post image-post">
+        <div key={top.id} className="news-post image-post">
         <img src={`http://127.0.0.1:8000/media/${top.image}/`} alt="" />
         <div className="hover-post">
           <Link className="category-link" to={`/blog/${top.id}`}>
@@ -28,8 +28,8 @@ let TradingPost = ({ data }) => {
     let img = `http://127.0.0.1:8000/media/${latest.image}/`;
     return (
       <>
-        <div className="col-md-6">
-          <div key={latest.id} className="news-post standard-post left-align">
+        <div key={latest.id} className="col-md-6">
+          <div className="news-post standard-post left-align">
             <div className="image-holder">
               <Link to={`/blog/${latest.id}`}>
                 <img src={img} alt="blog-image" />
